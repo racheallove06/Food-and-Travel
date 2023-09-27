@@ -1,6 +1,5 @@
-import { makeStyles, alpha } from "@mui/material";
-
-export default makeStyles((theme) => ({
+import { makeStyles, alpha } from "@material-ui/core";
+const useStyles = makeStyles((theme) => ({
   title: {
     display: "none",
     [theme.breakpoints.up("sm")]: {
@@ -44,3 +43,5 @@ export default makeStyles((theme) => ({
     justifyContent: "space-between",
   },
 }));
+
+export default useStyles;
